@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Down Timer</title>
+</head>
+<body>
+	<div data-count-down-time="Oct 19, 2017 16:01:00 UTC+0200"></div>
+	
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../count-down-timer.js"></script>
+<script type="text/javascript">
+	countDown({
+		onEnd: function(instance) {
+			instance.$el.html('<img src="https://blog.logoscdn.com/wp-content/uploads/last-day-logos-6-introductory-offers.png" />');
+		}
+	});
+</script>
+</body>
+</html>

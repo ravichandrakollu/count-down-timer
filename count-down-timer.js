@@ -16,7 +16,9 @@ var countDown = (function($) {
 	};
 
 	Item.prototype.options = {
-		onEnd: function(instance) {},
+		onEnd: function(instance) {
+			console.log(instance);
+		},
 		format: function(t) {
 			var str = '';
 
@@ -54,10 +56,10 @@ var countDown = (function($) {
 	};
 
 
-	return function() {
+	return function(options) {
 		// Init by selector
 		$('*[data-count-down-time]').each(function() {
-			new Item(this);
+			new Item(this, options);
 		});
 	};
 }(jQuery));
