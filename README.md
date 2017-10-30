@@ -5,7 +5,9 @@ Count Down Timer helps the users to display the count down timer and displays th
 
 **Check out [demo](https://jsfiddle.net/0Lo7dsqb/2/)**
 
-Try changing the date in <div data-count-down-time=""></div>
+Try changing the date in 
+
+      <div data-count-down-time=""></div>
 
 ## How it works
 -Give the data attribute count-down-time to a container in html file where you want to use the timer.
